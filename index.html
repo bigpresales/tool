@@ -12,8 +12,14 @@
         <button onclick="addServer()">Add Server</button>
         <button onclick="addRouter()">Add Router</button>
         <button onclick="addText()">Add Text</button>
+        <button onclick="addArrow()">Add Arrow</button>
+        <button onclick="addDoubleArrow()">Add Double Arrow</button>
         <input type="file" id="uploadImage" onchange="uploadImage(event)">
+        <button onclick="deleteSelected()">Delete Selected</button>
         <button onclick="exportCanvas()">Export Canvas</button>
+    </div>
+    <div id="logo">
+        <img src="bluebar.jpg" alt="Logo">
     </div>
     <canvas id="canvas" width="800" height="600"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
