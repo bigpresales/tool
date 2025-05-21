@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="toolbar">
+        <button onclick="addPrinter()">Add Printer</button>
+        <button onclick="addServer()">Add Server</button>
+        <button onclick="addRouter()">Add Router</button>
+        <button onclick="addText()">Add Text</button>
+        <input type="file" id="uploadImage" onchange="uploadImage(event)">
+        <button onclick="exportCanvas()">Export Canvas</button>
+    </div>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
